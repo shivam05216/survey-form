@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="container">
+            <label for="email">*Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+
+            <label for="age">*Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter Your Age" required>
+
+            <label for="gender">*Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p>Programming Approach:</p>
+            <label><input type="radio" name="approach" value="frontend"> Front-End</label>
+            <label><input type="radio" name="approach" value="backend"> Back-End</label>
+            <label><input type="radio" name="approach" value="fullstack"> Full-Stack</label>
+
+            <p>Your Favorite Programming Languages:</p>
+            <label><input type="checkbox" name="language" value="c_cpp"> C/C++</label>
+            <label><input type="checkbox" name="language" value="pascal"> Pascal/Delphi</label>
+            <label><input type="checkbox" name="language" value="java"> Java</label>
+            <label><input type="checkbox" name="language" value="javascript"> JavaScript</label>
+            <label><input type="checkbox" name="language" value="python"> Python</label>
+
+            <label for="file">Upload file/image:</label>
+            <input type="file" id="file" name="file">
+
+            <label for="resume">Upload resume:</label>
+            <input type="file" id="resume" name="resume">
+
+            <label for="summary">Summary:</label>
+            <textarea id="summary" name="summary" placeholder="Enter your summary here"></textarea>
+
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
